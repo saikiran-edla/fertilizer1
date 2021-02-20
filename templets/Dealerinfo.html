@@ -1,0 +1,88 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="}% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="Dinfolink">
+            <ul class="Dinfo3">
+                <li><a href="shome"> Home</a></li>
+                <li><a href="addproduct">Add products</a></li>
+                <li><a href="display">Display products</a></li>
+                <li><a href="orderRecived">Recived Orders</a></li>
+                <li><a href="delivery">Delivery Status</a></li>
+                <li><a href="">Your Info</a></li>
+                <li><a href="logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="Dinfo">
+            {% for i in data %}
+            <div class="Dinfo1">
+                <h1>Your Profile</h1>
+                <div class="DinfoData">
+                    Name<br>
+                    Contact No<br>
+                    Email_ID<br>
+                    Shop Name<br>
+                    Shop ID<br>
+                    Shop Address<br><br>
+                    <a href="">Edit your Profile</a>
+                </div>
+                
+                <div class="DinfoData">
+                    :-{{i.Name}}<br>
+                    :-{{i.Mobile}}<br>
+                    :-{{i.Email}}<br>
+                    :--------<br>
+                    :--------<br>
+                    :--------<br>
+                </div>
+                
+            </div>
+        </div>
+        <div class="Dinfo">
+            <div class="Dinfo1">
+                <h1>Account Details</h1>
+                <div class="DinfoData">
+                    A/C No<br>
+                    Holder Name<br>
+                    IFSC Code<br>
+                    Bank Name<br>
+                    Mobile Number<br>
+                    Email ID<br><br>
+                    <a href="">Edit Your account</a>
+                </div>
+                <div class="DinfoData">
+                    :--------<br>
+                    :--------<br>
+                    :--------<br>
+                    :--------<br>
+                    :-{{i.Mobile}}<br>
+                    :-{{i.Email}}<br>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        
+        

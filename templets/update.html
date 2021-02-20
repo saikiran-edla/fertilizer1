@@ -1,0 +1,93 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="Dinfolink">
+            <ul class="Dinfo3">
+                <li><a href="Dealer_home"> Home</a></li>
+                <li><a href="Addproduct">Add products</a></li>
+                <li><a href="">Delete products</a></li>
+                <li><a href="OrderRecived">Recived Orders</a></li>
+                <li><a href="Delivery">Delivery Status</a></li>
+                <li><a href="Dealer_info">Your Info</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </div>
+        <div class="Update">
+            <form>
+                <table>
+                    <tr ><th class="delivery1" colspan="5">Update/Delete Product</th></tr>
+                    <tr>
+                        <th class="delivery2">Product_Id</th>
+                        <th class="delivery2">Product_Name</th>
+                        <th class="delivery2">Product_Price</th>
+                        <th class="delivery2">Update_Product</th>
+                        <th class="delivery2">Delete_Product</th>
+                    </tr>
+                    <tr>
+                        <td>OD15978545</td>
+                        <td>Product1</td>
+                        <td>&#8377;549/-(10kg)</td>
+                        <td><button type="submit">Update</button></td>
+                        <td><button type="submit">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>OD15978545</td>
+                        <td>Product2</td>
+                        <td>&#8377;1299/-(50kg)</td>
+                        <td><button type="submit">Update</button></td>
+                        <td><button type="submit">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>OD15978545</td>
+                        <td>Product3</td>
+                        <td>&#8377;999/-(50kg)</td>
+                        <td><button type="submit">Update</button></td>
+                        <td><button type="submit">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>OD15978545</td>
+                        <td>Product3</td>
+                        <td>&#8377;499/-(10kg)</td>
+                        <td><button type="submit">Update</button></td>
+                        <td><button type="submit">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>OD15978545</td>
+                        <td>Product4</td>
+                        <td>&#8377;250/-(1kg)</td>
+                        <td><button type="submit">Update</button></td>
+                        <td><button type="submit">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>OD15978545</td>
+                        <td>Product5</td>
+                        <td>&#8377;(199)/-(1kg)</td>
+                        <td><button type="submit">Update</button></td>
+                        <td><button type="submit">Delete</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>

@@ -1,0 +1,237 @@
+.menu{height: 20%;width: 100%;float: left;background-color: rgba(41, 217, 223, 0.781);}
+.logo{height: 100%;width:15%;float: left;}
+.text{float: right;font-size: large;font-style: oblique;color: rgba(14, 15, 14, 0.993);}
+.search{height: 100%;width: 55%;float: left;}
+.input{height: 28%;width: 50%;float: left;padding:10px;margin-top: 8%;margin-left: 20%;border-radius: 10px;font-family: cursive;}
+.button{height: 28%;width:13%;float: left;margin-top: 8%;border-radius: 10px;padding: 10px;background-color: green;color: white;
+    font-family: cursive ;margin-left: 3px;}
+.details{height: 100%;width: 30%;float: left;}
+.menu-bar{height: 50px;width: 100%;float: left;background-color: rgb(255, 180, 155);}
+.link{display: inline-flex;list-style: none;color: rgb(7, 14, 14);text-decoration: none;}
+.menu-bar ul li{width: 240px;font-size:large;font-family: cursive;border-right: 2px solid white;text-align: center;}
+.menu-bar ul li:last-child{border-right: none;}
+.menu-bar ul li a{text-decoration: none;color: green;}
+.menu-bar ul li a:hover{color: rgb(23, 24, 22);}
+.dropdown{display: none;}
+.menu-bar ul li:hover .dropdown{ display: block;position: absolute;margin-top: 5px;margin-left: -15px;}
+.menu-bar ul li:hover .dropdown ul{display: block;margin:5px;list-style: none;}
+.menu-bar ul li:hover .dropdown ul li{width: 150px;padding: 5px;border-bottom: 1px dotted rgb(7, 253, 40);background: transparent;border-radius: 5px;text-align: left;;
+ background-color: rgba(232, 243, 78, 0.678);}
+ .menu-bar ul li:hover .dropdown ul li{width: 100%;animation: animate 800ms forwards ease;}
+ .menu-bar ul li:hover .dropdown ul li:nth-of-type(1){
+    transform-origin: top left;
+    transform: skewX(45deg) scaleY(0);
+}
+.menu-bar ul li:hover .dropdown ul li:nth-of-type(2){
+    transform-origin: top left;
+    transform: skewX(-45deg) scaleY(0);
+    animation-delay: 150ms;
+}
+
+@keyframes animate{
+    to{
+        transform: skewX(0deg) scaleY(1);
+    }
+}
+.container3 ul{list-style: none;color: rgb(130, 190, 50);font-size:large;padding-top: 200px;font-family: cursive;}
+.content1{float: left;height: 40%;width: 49.2%;text-align: center;background-color: lightgreen;border-radius: 10px;margin-left: 3px;}
+.content2{text-align: center;font-style: italic;}
+.content1 p{text-align: left;word-spacing: 1px;font-size: large;font-family: cursive;padding-left: 10px;text-indent: 50px;}
+.product{height: 140%;width: 100%;float: left;background-color:rgba(90, 146, 148, 0.534);}
+.p1{height: 45%;width: 28%;float: left;background-color: rgba(245, 245, 245, 0.616) ;margin: 30px;margin-left: 45px;border-radius: 10px;}
+.p2{height: 30%;width: 100%;float: left;}
+.p3{height: 80%;width: 30%;margin-left: 32.5%;padding-top: 15px;}
+.p4{height: 40%;width: 80%;float: left;margin: 20px;;text-align: center;font-size: large;line-height: 5mm;}
+.p5{height: 30%;width: 100%;float: left;}
+.b2{height: 30px;width:40%;margin-left: 120px;margin-top:10px;border: 2px solid black;background-color: rgba(180, 138, 30, 0.897);color: white;}
+.p1:hover{background-color: gray;color: white;}
+                            /* Footer */
+.footer{height: 50%;width: 100%;float: left;background-color: rgba(0, 207, 79, 0.945);}
+.f1{float: left;width: 25%;color: whitesmoke;margin-left: 90px;margin-top: 50px;}
+.f2{font-size: larger;font-family: Arial, Helvetica, sans-serif;}
+.f3{font-style: unset; text-align: justify;margin-top: 30px;}
+.f4{float: left;width: 100%;height: 30px;}
+.f5{float: left;width: 100%;height: 200px;margin-top: 25px;}
+.f6{float: left;width: 50%;}
+.f7{float: left;width: 100%;text-decoration: none;color: white;font-size: large;margin-top: 5px;}
+.fimg{width: 7%;height: 20px;}
+.f7:hover{color: red;}
+
+                        /* seller reg */
+sup{color: red;}
+.sr1{height: 75%;width: 30%;position: relative;top:50%;left: 49%; transform: translate(-50%,-50%);;border-radius: 10px;background-color: rgba(255, 255, 255, 0.521);
+    box-shadow: -5px 4px 3px rgb(75, 236, 0);float: left;}
+.sr2{text-align: center;color:rgb(12, 65, 238);font-size: 2.2em;word-spacing: 10px;}
+.sr3{width: 100%;height:65px;float: left;}
+.sr9{font-size: larger;color: black;margin-left: 30px;float: left;height: 30px;font-style: oblique;}
+.sr6{width: 100%;height: 30px;float: left;}
+.sr4{font-size: larger;color: rgb(35, 22, 43);margin-left: 30px;float: left;width: 50%;height: 30px;font-style: oblique;}
+.sr5{width: 60%;height: 30px;border-radius: 5px;background-color: rgba(148, 143, 143, 0.192);float: left;margin-left: 40px;border: none;border-bottom: 2px solid rgb(17, 245, 10);
+background-color: transparent;padding: 10px;}
+.sr7{width: 80px;height: 30px;margin-left: 35%;margin-top: 10px;font-style: bold;background-color: teal;color: white;}
+.sr8{float:right;margin-top: 10px;}
+.sr8 a{text-decoration: none;font-size: larger;font-family: cursive ;}
+.sr3 ::placeholder{color: green;}
+                          /* customer reg */
+.r2{height: 85%;width: 80%;float: left;margin-left: 10%;margin-top: 2%;background-color:rgba(238, 237, 237, 0.582);;margin-top: 80px;border-radius: 5px;
+box-shadow: -5px 4px 3px rgb(18, 168, 18);}
+.r3{text-align: center;color:aqua;font-size: 2em;word-spacing: 10px;text-shadow:-2px 1px 1px black ;}
+.r4{height: 80px;width: 50%;float: left;}
+.r4 ::placeholder{color:rgb(169, 35, 223);}
+.r5{font-size:larger; color: rgb(10, 10, 7);font-style: italic;}
+.r6{width: 60%;height: 30px;background-color: rgba(251, 252, 250, 0.719);border-radius: 5px;padding: 10px;border: none;border-bottom: 2px solid rgb(7, 105, 218);}
+.r7{width: 20%;height: 40px;margin-left:85%;font-size: larger;background-color: rgb(13, 233, 97);font-style: italic;}
+.r8{width: 100%;height: 30px;float: left;text-align: center;font-size: large;color:black;}
+.r9{height: 10px;width: 100%;color: red;float: left;margin-left: 40px;}
+                                /* product file CSS  */
+
+.p11{height: 240%;width: 100%;float: left;background-color:rgba(95, 158, 160, 0.205);;}
+.p12{height: 27%;width: 20%;float: left;background-color: whitesmoke;margin: 30px;margin-left: 45px;margin-top: 80px;border-radius:5px;}
+.p12:hover{color: white;background-color:black;}
+.p55{height: 30%;width: 100%;float: left;}
+.p55 button{height: 30px;width:40%;margin-left: 90px;margin-top:10px;border: 2px solid black;background-color: rgba(180, 138, 30, 0.897);color: white;}
+
+                                 /*  Pesticide file CSS  */
+ .c2{float: left;background-color:rgb(192, 191, 191) ;height: 240%;width: 100%;}
+                                 /* Seller Login */
+.c41{height: 450px;width: 400px;position: absolute;top: 75%;left: 50%;transform: translate(-50%,-50%);background-color: rgb(139, 196, 124);
+    ;border-radius: 5px;}
+.c44{text-align:center;color: rgb(34, 84, 184);font-size: 2em;word-spacing: 10px;margin-bottom: 70px;border-bottom:  6px double green ;margin: 50px;}
+.c43{width:70%;height: 40px;display: block;margin-left: 60px;padding: 0px 10px;border-radius: 5px;background: transparent;
+    border: none;border-bottom: 3px solid rgb(2, 27, 170);font-size: medium;}
+.c41 ::placeholder{color: rgb(15, 15, 15);font-style: oblique;}
+.c45{width:60%;height: 30px;display: block;margin: auto;color: white;background-color: aqua;border: none;font-size: large;margin-top: 15px;}
+.forget{width: 80%;height: 30px;line-height: 30px;display: block;margin: auto;color: white;background-color: rgb(82, 10, 82);text-align: right;padding-right: 30px;
+text-decoration: none;}
+.c46{float: right;color:black;}
+.c46 a{text-decoration: none;font-size: larger;font-style: italic;color: rgb(131, 8, 245);}
+                                /* Farmer Login */
+.far1{height: 450px;width: 400px;position: absolute;top: 75%;left: 50%;transform: translate(-50%,-50%);background-color: rgb(138, 196, 124);
+    ;border-radius: 5px;opacity: 80%;}
+.far3{text-align:center;color: white;font-size: 2em;word-spacing: 10px;margin-bottom: 40px;text-shadow: -2px 2px 1px black;
+    border-bottom: 6px double blue;margin: 60px;}
+.far4{width:60%;height: 30px;display: block;padding: 0px 10px;box-sizing: border-box;border-radius: 5px;border: none;margin-left:70px;
+background: transparent;border-bottom: 2px solid aqua;margin-bottom: 15px;}
+.far1 ::placeholder{color: black;font-style: italic;}
+.far5{width:50%;height: 30px;display: block;margin: auto;color:black;background-color:white;border: none;font-size: large;
+    border-radius: 5px;border: 2px solid rgb(115, 255, 0);}
+.far6{float: right;color:black;font-size: larger;}
+.far7{color:red;font-size: large;text-decoration: none;}
+.user{height: 32px;width: 20px;float: left;margin-left: 60px;}
+                                /* Track your order */
+.order{height: 70%;width: 100%;float: left;background-color: rgb(85, 226, 156);margin-top: 2px;margin-bottom: 2px;}
+.order1{float: left;;height: 50%; width: 30%;background-color: wheat;margin-left:35%;margin-top: 110px;border-radius: 10px;border: 1px solid black;box-shadow: -2px 6px 4px rgb(12, 10, 14);}
+.font{text-align: center;text-decoration: underline;}
+.order1 label{font-size: larger;margin-left: 40px;float: left;margin-top: 40px;}
+.order1 input{margin-top: 30px;height: 40px;width: 50%;border-radius: 10px;background-color: rgb(195, 240, 226);}
+.order1 button{height: 30px;width: 80px;margin-left: 40%;margin-top: 20px;border-radius: 5px;border: 2px solid rgb(54, 47, 47);font-size: medium;}                                
+                              /* contactus */
+.contactus1{height: 85%;width: 55%;float: left;margin: 30px;background-color: rgba(227, 235, 205, 0.589);opacity:85%;margin-top: 80px;}
+.contactus2{height: 100%;width: 50%;float: left;}
+.contactus1 .h3{text-align: center;padding-top: 15px;} 
+.contactus1 .c1{text-align: center;font-family: cursive;color: rgb(145, 49, 209);}
+.contactus2 input{float: left;height: 40px;width: 80%;border: none;border-bottom: 3px solid black;border-radius: 5px;margin-top: 35px;margin-left: 15px;background-color:white;opacity: 90%;}
+.contactus1 ::placeholder{color:black;font-size: medium;font-style: italic;}
+.contactus3{height: 100%;width: 50%;float: left;}
+.contactus3 textarea{height: 60%;width: 80%;border: 2px solid black;border-radius: 5px;margin-top: 10%;}
+.contactus3 button{height: 30px;width: 80px;margin-top: 15px;background-color: aqua;margin-left: 60%;}
+.contactus4{height: 50%;width: 100%;float: left;}
+.contactus5{height: 20%;width: 100%;float: left;} .contactus51{margin-left: 55px;}
+                        /* addproducts */
+.addcontact{height: 8px;width: 100%;float: right;font-size: large;font-style: oblique;margin-top: 40px;font-family: cursive;}
+.aproduct{height: 90%;width: 100%;float: left;background-color: rgba(108, 250, 195, 0.973);margin-top: 1px;}
+.aproduct1{height: 57%;width: 40%;background-color: white;translate: (-50%,-50%);top: 45%;left: 30%;position: absolute;opacity: 80%;}
+.aproduct1 h1{text-decoration: underline;text-align: center;height: 50px;float: left;width: 100%;}
+.aproduct2{height: 60px;width: 100%;float: left;text-align: center;}
+.aproduct2 input{height: 40px;width: 45%;border-radius: 5px;}
+.aproduct2 textarea{height: 50px;width: 40%;border-radius: 5px;margin-top: 10px;}
+.aproduct2 button{width: 100px;margin-top: 35px;}
+.apbutton{background-color: aqua;height: 30px;width: 30px;} 
+                         /* delivery Status */
+.delivery{height: 75%;width: 100%;float: left;background-color: rgba(108, 250, 195, 0.973);margin-top: 1px;}
+.delivery table{width:55%;border: 2px solid black;position: absolute;top: 40%;left: 23%;height: 30%;}
+.delivery1{border: 1px solid black;text-decoration: underline;font-size: x-large;color: darkblue;text-align: center;}
+.delivery2{border: 1px solid black;color: darkblue;width: 20%;}
+.delivery td{border: 1px solid black;text-align: center;}
+                        /* Orderrecived */
+.orderinfo{height: 75%;width: 100%;float: left;background-color: rgba(108, 250, 195, 0.973);margin-top: 1px;}
+.orderinfo table{width:65%;border: 2px solid black;position: absolute;top: 40%;left: 17%;height: 30%;}
+.Orderinfo1{border: 1px solid black;color: darkblue;width: 17%;}
+.orderinfo td{border: 1px solid black;text-align: center;}
+                    /* Update product */
+.update{height: 75%;width: 100%;float: left;background-color: rgba(108, 250, 195, 0.973);margin-top: 1px;}
+.update table{width:65%;border: 2px solid black;position: absolute;top: 40%;left: 17%;height: 40%;}
+.update td{border: 1px solid black;text-align: center;}
+.update button{height: 25px;width: 75px;background-color: rgba(156, 243, 16, 0.856);}
+                   /* Dealer_Info */
+.Dinfo{height: 80%;width: 50%;float: left;background-color: rgba(108, 250, 195, 0.973);}
+.Dinfo1{height: 75%;width: 90%;float: left;margin-top: 30px;margin-left: 30px;background-color: white;border-radius: 5px;box-shadow:6px 5px 2px rgb(78, 73, 73);}
+.Dinfo1 h1{text-decoration: underline;text-align: center;color: rgb(30, 47, 95);height: 10%;width: 100%;float: left;}
+.DinfoData{width: 40%;height:70%;float: left;font-size:22;margin-top: 18px;padding-left: 10px;line-height: 40px;float: left;}
+.Dinfolink{height: 50px;width: 100%;float: left;background-color: rgb(255, 180, 155);}
+.Dinfo3{display: inline-flex;list-style: none;color: rgb(7, 14, 14);text-decoration: none;}
+.Dinfolink ul li{width: 206px;font-size:large;font-family: cursive;border-right: 2px solid white;text-align: center;}
+.Dinfolink ul li:last-child{border-right: none;}
+.Dinfolink ul li a{text-decoration: none;color: green;}
+.Dinfolink ul li a:hover{color: rgb(23, 24, 22);}
+                /* farmerhome */
+.Fhome{height: 50px;width: 100%;float: left;background-color: rgb(255, 180, 155);}
+.Fhomelink{display: inline-flex;list-style: none;color: rgb(7, 14, 14);text-decoration: none;}
+.Fhome ul li{width: 180px;font-size:large;font-family: cursive;border-right: 2px solid white;text-align: center;}
+.Fhome ul li:last-child{border-right: none;}
+.Fhome ul li a{text-decoration: none;color: green;}
+.Fhome ul li a:hover{color: rgb(23, 24, 22);}
+.dropdown{display: none;}
+.Fhome ul li:hover .dropdown{ display: block;position: absolute;margin-top: 5px;margin-left: -15px;}
+.Fhome ul li:hover .dropdown ul{display: block;margin:5px;list-style: none;}
+.Fhome ul li:hover .dropdown ul li{width: 150px;padding: 5px;border-bottom: 1px dotted rgb(7, 253, 40);background: transparent;border-radius: 5px;text-align: left;;
+background-color: rgba(232, 243, 78, 0.678);}
+.Fhome ul li:hover .dropdown ul li{width: 100%;animation: animate 800ms forwards ease;}
+.Fhome ul li:hover .dropdown ul li:nth-of-type(1){
+transform-origin: top left;
+transform: skewX(45deg) scaleY(0);
+}
+.Fhome ul li:hover .dropdown ul li:nth-of-type(2){
+transform-origin: top left;
+transform: skewX(-45deg) scaleY(0);
+animation-delay: 150ms;
+}
+                    
+@keyframes animate{
+   to{
+      transform: skewX(0deg) scaleY(1);
+      }
+        }
+                                /* farmers cart */
+.Farmer_Cart1{float: left;width: 100%;height: 50px;}
+.Farmer_Cart11{float: left;width: 20%;height: 40px;border: white 2px solid;margin-top: 5px;text-align: center;font-weight: bold;font-size: larger;background-color: rgb(19, 19, 82);color: white;}
+.Farmer_Cart1 b{height: 35px;}
+.Farmer_Cart1 p{margin-top: 10px;}
+.Farmer_Cart12{float: left;width: 12.9%;height: 40px;border: white 2px solid;margin-top: 5px;text-align: center;font-weight: bold;font-size: larger;background-color: rgb(19, 19, 82);color: white;}
+.Farmer_Cart13{float: left;width: 26.8%;height: 40px;border: white 2px solid; margin-top: 5px;text-align: center;font-weight: bold;font-size: larger;background-color: rgb(19, 19, 82); color: white;}
+.Farmer_Cart2{float: left;width: 73%;height: 125px;background-color: whitesmoke;}
+.Farmer_Cart21{float: left;width: 27.3%;height: 125px;border: black 2px solid;}
+.Farmer_Cart21 img{ float: left; width: 30%; height: 100px; margin-top: 13px; margin-left: 25px; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; }
+.Farmer_Cart21 p{margin-top: 30px;}
+.Farmer_Cart21 b{margin-left: 25px;}
+.Farmer_Cart4{float: left;width: 17.7%;height: 125px;border: black 2px solid;text-align: center;}
+.Farmer_Cart41{float: left;width: 100%;height: 50px;text-align: center;}
+.Farmer_Cart4 p{margin-top: 30px;}
+.Farmer_Cart4 select{width: 20%;margin-top: 32px;}
+.Farmer_Cart41 button{ width: 30%; height: 25px;margin-top: 10px; background-color: aqua; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px;}
+.Farmer_Cart42{ width: 50%; height: 30px;margin-top: 45px; border-radius:15px ; -webkit-border-radius:15px ; -moz-border-radius:15px ; -ms-border-radius:15px ; -o-border-radius:15px ;outline: none;background-color: aqua;}
+.Farmer_Cart5{float: left;width: 26.7%;height: 200px;background-color: aquamarine;border: black 2px solid;}
+.Farmer_Cart51{float: left;width:100%;}
+.Farmer_Cart51 button{float: left; width: 95%; height: 35px; background-color: blue; color: whitesmoke;font-size: 15px; border-radius:20px ; -webkit-border-radius:20px ; -moz-border-radius:20px ; -ms-border-radius:20px ; -o-border-radius:20px ;outline: none; }
+.Farmer_Cart52{float: left;width: 45%;height: 50px;margin-left: 20px;}
+.Farmer_Cart53{float: left;width: 47%;margin-left: 10px;}
+                         /* farmer Orders */
+.Farmer_order{float: left;height: 80%;width: 100%;float: left;background-color: rgba(100, 175, 156, 0.267);}
+.Farmer_order1{height: 250px;width:100%;float: left;margin-top: 20px;} 
+.Farmer_order2{float: left;width: 10%;height: 200px;}  
+.Farmer_order2 img{width: 100%;height: 200px;margin-top: 20px;} 
+.Farmer_order3 {float: left;height: 200px;width: 25%;margin-left: 40px;}            
+                        /* farmer Notifications */
+.farmer_Not{height: 150px;width: 100%;float: left;}
+.farmer_Not b{font-size: large;float: left;margin-top: 40px;margin-left: 30px;}
+.farmer_Not img{height: 100px;width: 80px;float: left;margin-top: 20px;border-radius: 5px;}

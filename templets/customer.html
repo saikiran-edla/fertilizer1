@@ -1,0 +1,166 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+        <style>
+            .r1{height: 130%;width: 100%;float: left;background-image: url("{% static 'images/login5.jpg'%}");background-repeat: no-repeat;background-size: 100% 100%;margin-bottom: 2px;}
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <ul class="link">
+                <li><a href="/"> Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="product">Product's</a>
+                </li>
+                <li><a href="">Dealar's corner</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../dealer/slogin">sign in</a></li>
+                            <li><a href="../dealer/">Sell with Us</a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li><a href="">Farmer's corner</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="flogin">sign in</a></li>
+                            <li><a href="#">Registration</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li><a href="contactus">Contact Us</a></li>
+            </ul>
+        </div>
+        <form action="register"method="POST" enctype="multipart/form-data">
+            <div class="r1">
+                <div class="r2">
+                    <h1 class="r3">Customer Registration</h1>
+                    <br>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Firsr Name:-</label>
+                        <input type="text" name="fname" placeholder="First Name" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Last Name:-</label>
+                        <input type="text" name="lname" placeholder="Last Name" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Mobile No:-</label>
+                        <input type="tel"  id="mobilenumber" value="" name="mobile" placeholder="Mobile No" required class="r6">
+                        <span id="messages" style="color:blue;"></span>
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Email:-</label>
+                        <input type="email" name="email" placeholder="Mail ID" required  class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>State:-</label>
+                        <input type="text" name="state" placeholder="State" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>District:-</label>
+                        <input type="text" name="district" placeholder="District" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Mandal:-</label>
+                        <input type="text" name="mandal" placeholder="Mandal" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Village:-</label>
+                        <input type='text' name="village" placeholder="village" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Aadhaar:-</label>
+                        <input type="number" value="" name="aadhaar" placeholder="Adhaar no" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Pass-Book No:-</label>
+                        <input type="text" name="passbook" placeholder="pass book no" required class="r6">
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>Password</label>
+                        <input type="password" name="password" placeholder="Password" required  class="r6" >
+                    </div>
+                    <div class="r4">
+                        <label class="r5"><sup>*</sup>re-enter password</label>
+                        <input type="password" name="repassword"  placeholder="password"  required class="r6">
+                    </div>
+                    <div class="r4">
+                        <button type="submit" value="Submit" class="r7">Submit</button>
+                    </div>
+                    {% for item in messages %}
+                        <h2>{{item}}</h2>
+                    {%endfor%}
+                    <div  class="r8"> 
+                        <b>Already Have An Account?<a href="flogin">Click here!</a> To login</b>
+                    </div>
+                    <div>
+                        <p class="r9">*Mandotary Fields,</p>
+                    </div>
+                    <div>
+                        <p class="r9">*Please provide proper detaile's.</p>
+                    </div>
+                 </div>
+            </div>
+        </form>
+        <div class="footer">
+            <div class="f1">
+                <b class="f2" >FERTILIZER'S PVT LTD</b>
+                <p class="f3">
+                    Organic farming promotes the use of crop rotations and 
+                    cover crops, and encourages balanced host/predator
+                    relationships. Organic residues and nutrients produced
+                    on the farm are recycled back to the soil.
+                </p>
+            </div>
+            <div class="f1">
+                <div class="f4">
+                    <b class="f2" >QUICK LINKS</b>
+                </div> 
+                <div class="f5">
+                    <div class="f6">
+                       <a class="f7" href="/">Home</a>
+                       <a class="f7" href="product">Products</a>
+                    </div>
+                    <div class="f6">
+                       <a class="f7" href="">About Us</a>
+                       <a class="f7" href="contactus">contactus </a>  
+                    </div>
+                </div>
+            </div>
+            <div class="f1">
+                <b class="f2">CONTACT US</b>
+                <p>
+                    <p>E-FERTILIZER'S PVT LTD</p>
+                    <p><input class="fimg" type="image" src="{% static 'images/loc2.png'%}"> Complex,1st Floor,BSF & Reva Circles,</p>
+                    <p>Ramanthapur,Ambarpet Main Road.</p>
+                    <p>Uppal,Hyderabad-500013</p>
+                    <p><img class="fimg" src="{% static 'images/mail1.png'%}"> info@e-fertilizers.com</p>
+                    <p><img class="fimg" src="{% static 'images/call1.png'%}"> +91-9550027195 , 9666412540</p>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="Dinfolink">
+            <ul class="Dinfo3">
+                <li><a href="shome"> Home</a></li>
+                <li><a href="">Add products</a></li>
+                <li><a href="display">Display</a></li>
+                <li><a href="OrderRecived">Recived Orders</a></li>
+                <li><a href="Delivery">Delivery Status</a></li>
+                <li><a href="dinfo">Your Info</a></li>
+                <li><a href="logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="aproduct">
+            <div class="aproduct1">
+                <form action="addp"  method="POST" enctype="multipart/form-data">
+                    {% csrf_token %} 
+                    <h1>Add Product</h1>
+                    <div class="aproduct2">
+                        <label><b>Product Name:</b></label>
+                        <input type="text" name='pname' required placeholder="Enter Product Name">
+                    </div>
+                    <div class="aproduct2">
+                        <label><b>Product Price:</b></label>
+                        <input type="number" name="pprice" required placeholder="Enter Product Price">
+                    </div>
+                    <div class="aproduct2">
+                        <label><b>Product Description:</b></label>
+                        <textarea type="text" name="pdesc" required placeholder="Product Description" cols="15"></textarea>
+                    </div>
+                    <div class="aproduct2">
+                        <label>Product image:</label>
+                        <input type="file" name="pimage" required>
+                    </div>
+                    <div class="aproduct2">
+                        <button type="submit" class="apbutton"><b class="apbutton">Add Product</b></button>
+                    </div>
+                    {% for item in messages %}
+                        <h3>{{item}}</h3>
+                    {% endfor %}
+                </form>
+            </div>
+        </div>

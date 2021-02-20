@@ -1,0 +1,84 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="Dinfolink">
+            <ul class="Dinfo3">
+                <li><a href="Dealer_home"> Home</a></li>
+                <li><a href="Addproduct">Add products</a></li>
+                <li><a href="Update_product">Delete products</a></li>
+                <li><a href="#">Recived Orders</a></li>
+                <li><a href="Delivery">Delivery Status</a></li>
+                <li><a href="Dealer_info">Your Info</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </div>
+        <div class="orderinfo">
+            <form>
+                <table>
+                    <tr ><th class="delivery1" colspan="6">Order-Info</th></tr>
+                    <tr>
+                        <th class="orderinfo1">Product_Id</th>
+                        <th class="orderinfo1">Product_Name</th>
+                        <th class="orderinfo1">Product_Price</th>
+                        <th class="orderinfo1">Payment_Mode</th>
+                        <th class="orderinfo1">Order_Id</th>
+                        <th class="orderinfo1">Order_Status</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Product1</td>
+                        <td>&#8377;999/-(50kg)</td>
+                        <td>COD</td>
+                        <td>OD15768545</td>
+                        <td>Acepted</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Product2</td>
+                        <td>&#8377;1299/-(50kg)</td>
+                        <td>Debitcard</td>
+                        <td>OD15768658</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Product3</td>
+                        <td>&#8377;150/-(1kg)</td>
+                        <td>Credit Card</td>
+                        <td>OD15764576</td>
+                        <td>canceled</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Product4</td>
+                        <td>&#8377;485/-(10kg)</td>
+                        <td>COD</td>
+                        <td>OD15764855</td>
+                        <td>Acepted</td>
+                    </tr>
+                </table>
+            </form>
+        </div>

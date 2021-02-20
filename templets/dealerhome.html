@@ -1,0 +1,88 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="Dinfolink">
+            <ul class="Dinfo3">
+                <li><a href=""> Home</a></li>
+                <li><a href="addproduct">Add products</a></li>
+                <li><a href="display">Display products</a></li>
+                <li><a href="OrderRecived">Recived Orders</a></li>
+                <li><a href="Delivery">Delivery Status</a></li>
+                <li><a href="dinfo">Your Info</a></li>
+                <li><a href="logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="Orderinfo">
+            <form>
+                {% for i in data %}
+                    {{i.Email}}
+                {% endfor %}
+                <table>
+                    <tr ><th class="delivery1" colspan="6">Payment Details</th></tr>
+                    <tr>
+                        <th class="orderinfo1">Order_Id</th>
+                        <th class="orderinfo1">Payment_Via</th>
+                        <th class="orderinfo1">Payment_Id</th>
+                        <th class="orderinfo1">Amount</th>
+                        <th class="orderinfo1">Payment_Date</th>
+                        <th class="orderinfo1">Payment_Status</th>
+                    </tr>
+                    <tr>
+                        <td>OD15764896</td>
+                        <td>Credit card</td>
+                        <td>11022456</td>
+                        <td>&#8377;1499</td>
+                        <td>25-10-2019</td>
+                        <td>Sucess</td>
+                    </tr>
+                    <tr>
+                        <td>OD15254796</td>
+                        <td>COD</td>
+                        <td>--</td>
+                        <td>&#8377;1499</td>
+                        <td>--</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>OD15764896</td>
+                        <td>Debit Card</td>
+                        <td>11445566</td>
+                        <td>&#8377;1499</td>
+                        <td>02-002-2020</td>
+                        <td>Sucess</td>
+                    </tr>
+                    <tr>
+                        <td>OD15764896</td>
+                        <td>COD</td>
+                        <td>--</td>
+                        <td>&#8377;899</td>
+                        <td>05-06-2020</td>
+                        <td>Sucess</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+

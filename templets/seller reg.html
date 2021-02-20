@@ -1,0 +1,140 @@
+{% load static %}
+<html>
+    <head>
+        <meta name="viewport" content="Width=divice-width, intial-scale=1.0 ,user-scalable=no"/>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+        <style>
+            .sr{height: 100%;width: 100%;background-image: url("{% static 'images/reg.jpg'%}");background-repeat: no-repeat;background-size: 100% 100%;float: left;border: 2px solid beige;}
+        </style>
+        
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <ul class="link">
+                <li><a href="/">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="../product"></i>Product's</a>
+                </li>
+                <li><a href="">Dealar's corner</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="slogin">sign in</a></li>
+                            <li><a href="#">Sell with Us</a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li><a href=""></i>Farmer's corner</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../flogin">sign in</a></li>
+                            <li><a href="../freg">Registration</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li><a href="../contactus"></i>Contact Us</a></li>
+            </ul>
+        </div>
+        <form action="register" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="sr">
+                    <div class="sr1">
+                        <h2 class="sr2"> Seller Registration</h2>
+                        <br>
+                        <div class="sr6">
+                            <label class="sr9"> Salutation:-</label>
+                            <select>
+                                <option>MR.</option>
+                                <option>Ms.</option>
+                            </select>
+                        </div>
+                        <div class="sr3">
+                            <label class="sr4"><sup>*</sup>Name:-</label>
+                            <input class="sr5" type="text" placeholder="Enter Name" name="name" required>
+                        </div>
+                        <div class="sr3">
+                            <label class="sr4"><sup>*</sup>Mobile:-</label>
+                            <input class="sr5" type="tel" placeholder="Enter Your Mno" name="mobile" required>
+                        </div>
+                        <div class="sr3">
+                            <label class="sr4"><sup>*</sup>Email:-</label>
+                            <input class="sr5" type="email" placeholder="Enter Email" name="email" required>
+                        </div>  
+                        <div class="sr3">
+                            <label class="sr4">Password:-</label>
+                            <input class="sr5" type="password" placeholder="Password" name="password" required>
+                        </div>
+                        <div>
+                            <input type="checkbox" ><b>I Accept <a href=""> Terms & conditions!</a></b>
+                        </div>
+                        <div>
+                            <button type="submit" class="sr7">Submit</button>
+                        </div>
+                        <div class="sr8">
+                            <b>Already registerd <a href="slogin">Click here!</a> to Login..</b>
+                        </div>
+                        {% for item in messages %}
+                            <h3 style="color:red">{{item}}</h3>
+                        {% endfor %}
+                    </div>
+            </div>
+        </form>
+        <div class="footer">
+            <div class="f1">
+                <b class="f2" >FERTILIZER'S PVT LTD</b>
+                <p class="f3">
+                    Organic farming promotes the use of crop rotations and 
+                    cover crops, and encourages balanced host/predator
+                    relationships. Organic residues and nutrients produced
+                    on the farm are recycled back to the soil.
+                </p>
+            </div>
+            <div class="f1">
+                <div class="f4">
+                    <b class="f2" >QUICK LINKS</b>
+                </div> 
+                <div class="f5">
+                    <div class="f6">
+                       <a class="f7" href="/">Home</a>
+                       <a class="f7" href="../product">Products</a>
+                    </div>
+                    <div class="f6">
+                       <a class="f7" href="">About Us</a>
+                       <a class="f7" href="../contactus">contactus </a>  
+                    </div>
+                </div>
+            </div>
+            <div class="f1">
+                <b class="f2">CONTACT US</b>
+                <p>
+                    <p>E-FERTILIZER'S PVT LTD</p>
+                    <p><input class="fimg" type="image" src="{% static 'images/loc2.png'%}"> Complex,1st Floor,BSF & Reva Circles,</p>
+                    <p>Ramanthapur,Ambarpet Main Road.</p>
+                    <p>Uppal,Hyderabad-500013</p>
+                    <p><img class="fimg" src="{% static 'images/mail1.png'%}"> info@e-fertilizers.com</p>
+                    <p><img class="fimg" src="{% static 'images/call1.png'%}"> +91-9550027195 , 9666412540</p>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

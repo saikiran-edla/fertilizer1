@@ -1,0 +1,139 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'CSS/main.css'%}" rel="stylesheet">
+        <style>
+            .container{float: left;height: 51.2%;width: 20%;background-image: url("{% static 'images/thank.png'%}");background-size: 100% 100%;}
+            .container1{margin-left: 3px;margin-top: 3px;float: left;height: 50%;width: 58%;animation: slider 15s infinite step-end;border-radius: 15px;border: 4px solid aqua;}
+            @keyframes slider{
+                0%{ background-image: url("{% static 'images/slide.jpg'%}");background-size: 100% 100%;}
+                35%{background-image: url("{% static 'images/slide4.jpeg'%}");background-size: 100% 100%;}
+                75%{ background-image: url("{% static 'images/slide3.jpg'%}");background-size: 100% 100%;}
+                }
+            .content{height: 40%;width: 50%;float: left;background-image: url("{% static 'images/login5.jpg'%}");background-size: 100% 100%;margin-top: 2px;border-radius: 10px;}
+            
+            .container3{float: left;height: 51.2%;width: 21%;background-image: url("{% static 'images/slide2.jpg'%}");background-size: 100% 100%;margin-left: 3px;}
+            </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="menu-bar">
+            <ul class="link">
+                <li><a href="/"> Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="product">Product's</a>
+                </li>
+                <li><a href="">Dealar's corner</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../dealer/slogin">sign in</a></li>
+                            <li><a href="../dealer/">Sell with Us</a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li><a href="">Farmer's corner</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="flogin">sign in</a></li>
+                            <li><a href="freg">Registration</a></li>
+                        </ul>
+                    </div>   
+                </li>
+                <li><a href="contactus">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="container"></div>
+        <div class="container1">
+        </div>
+        <div class="container3">
+            <ul>
+                <li><b>&rarr;</b>Fertilizing made easy.</li>
+                <li><b>&rarr;</b> Keep the crops safe.</li> 
+                <li><b>&rarr;</b>Don’t be at a loss.</li>
+                <li><b>&rarr;</b>More at a lesser price.</li>
+            </ul>
+        </div>
+        <div class="product">
+            {% for i in data %}
+            <div class="p1">
+                <div class="p2">
+                    <img src="{{i.Pimage.url}}" class="p3">
+                </div>
+                <div class="p4">
+                    <p>{{i.Pname}}</p>
+                    <p>{{i.Pdesc}}</p>
+                    <p>Qty:-1Ltr</p>
+                    <P><b>&#8377;{{i.Pprice}}</b></P>
+                </div>
+                <div class="p5">
+                    <button type="submit" class="b2">Add to Cart</button>
+                    <button type="submit" class="b2">Buy Now</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="content"></div>
+        <div class="content1">
+            <h1 class="content2">Fertilizer's</h1>
+            <p>Fertilizers are substances that supply one or more of the chemicals required for plant growth. Fertilizers can be both organic and inorganic.
+                As per industry experts it is said that there are sixteen elements that are absolutely necessary for plant growth.
+                Out of these sixteen 9 elements are required in large quantities while the other seven are needed in smaller amounts.</p>
+        </div>
+        <div class="footer">
+            <div class="f1">
+                <b class="f2" >FERTILIZER'S PVT LTD</b>
+                <p class="f3">
+                    Organic farming promotes the use of crop rotations and 
+                    cover crops, and encourages balanced host/predator
+                    relationships. Organic residues and nutrients produced
+                    on the farm are recycled back to the soil.
+                </p>
+            </div>
+            <div class="f1">
+                <div class="f4">
+                    <b class="f2" >QUICK LINKS</b>
+                </div> 
+                <div class="f5">
+                    <div class="f6">
+                       <a class="f7" href="">Home</a>
+                       <a class="f7" href="">Products</a>
+                    </div>
+                    <div class="f6">
+                       <a class="f7" href="">About Us</a>
+                       <a class="f7" href="">contactus </a>  
+                    </div>
+                </div>
+            </div>
+            <div class="f1">
+                <b class="f2">CONTACT US</b>
+                <p>
+                    <p>E-FERTILIZER'S PVT LTD</p>
+                    <p><input class="fimg" type="image" src="{% static 'images/loc2.png' %}"> Complex,1st Floor,BSF & Reva Circles,</p>
+                    <p>Ramanthapur,Ambarpet Main Road.</p>
+                    <p>Uppal,Hyderabad-500013</p>
+                    <p><img class="fimg" src="{% static 'images/mail1.png'%}"> info@e-fertilizers.com</p>
+                    <p><img class="fimg" src="{% static 'images/call1.png'%}"> +91-9550027195 , 9666412540</p>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

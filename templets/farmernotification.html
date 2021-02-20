@@ -1,0 +1,61 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="Fhome">
+            <ul class="Fhomelink">
+                <li><a href="farmer_home"> Home</a></li>
+                <li><a href="farmer_product">Product's</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="farmer_pept">Pesticide's</a></li>
+                            <li><a href="farmer_insect">insecticide's</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="farmer_cart">Cart</a></li>
+                <li><a href="#">Notification's</a></li>
+                <li><a href="farmer_track">Track Your Orders</a></li>
+                <li><a href="farmer_order">Your orders</a></li>
+                <li><a href="farmer_info">Your_Info</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </div>
+        <div class="farmer_Not">
+            <img src="{% static 'images/product img/insectiside/p5.png'%}">
+            <b>Your product booking is confirmed</b>
+        </div>
+        <div class="farmer_Not">
+            <img src="{% static 'images/product img/insectiside/p5.png'%}">
+            <b>Payment sucess</b>
+        </div>
+        <div class="farmer_Not">
+            <img src="{% static 'images/product img/insectiside/p5.png'%}">
+            <b>Your product shipppes today</b>
+        </div>
+        <div class="farmer_Not">
+            <img src="{% static 'images/product img/insectiside/p5.png'%}">
+            <b>Your product is delivered</b>
+        </div>

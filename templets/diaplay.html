@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+    <head>
+        <title>E-fertilizer's</title>
+        <link href="{% static 'css/main.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/mylogo23.png'%}" width="100%" height="80%">
+                <b class="text">Welcome's you!</b>
+            </div>
+            <div class="search">
+                <input class="input" type="text" placeholder="search products">
+                <button class="button" type="submit">Search</button>
+            </div>
+            <div class="details">
+                <div class="addcontact">
+                    <b>Contact no:-</b>+919063161392.
+                </div>
+                <div class="addcontact">
+                    <b>Email:-</b>info@E-fertilizer's.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="Dinfolink">
+            <ul class="Dinfo3">
+                <li><a href="shome"> Home</a></li>
+                <li><a href="addproduct">Add products</a></li>
+                <li><a href="display">Display</a></li>
+                <li><a href="OrderRecived">Recived Orders</a></li>
+                <li><a href="Delivery">Delivery Status</a></li>
+                <li><a href="dinfo">Your Info</a></li>
+                <li><a href="logout">Logout</a></li>
+            </ul>
+        </div>
+        <form>
+            <div class="p11">
+                {% for i in data %}
+                <div class="p12">
+                    <div class="p2">
+                        <img src="{{i.Pimage.url}}" class="p3"></img>
+                    </div>
+                    <div class="p4">
+                        <p>{{i.Pname}}</p>
+                        <p>{{i.Pdesc}}</p>
+                        <p>Qty:-1KG</p>
+                        <P><b>&#8377;{{i.Pprice}}</b></P>
+                    </div>
+                    <div class="p55">
+                        <button type="submit">Update</button>
+                        <button type="submit">Delete</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </form>
+        
